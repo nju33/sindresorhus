@@ -21,6 +21,10 @@ const items = [
 		url: 'https://nju33.com'
 	},
 	{
+		label: 'Findy',
+		url: 'https://findy-code.io/share_profiles/mj1FnGAPvkbpJ'
+	},
+	{
 		label: 'GitHub',
 		url: 'https://github.com/nju33'
 	},
