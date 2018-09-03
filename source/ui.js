@@ -17,16 +17,8 @@ const handleSelect = item => {
 
 const items = [
 	{
-		label: 'Curriculum Vitae',
-		url: 'https://github.com/nju33/Curriculum-Vitae/blob/master/README.md'
-	},
-	{
 		label: 'Website',
-		url: 'https://nju33.work'
-	},
-	{
-		label: 'Twitter',
-		url: 'https://twitter.com/nju33_ki'
+		url: 'https://nju33.com'
 	},
 	{
 		label: 'GitHub',
@@ -35,6 +27,14 @@ const items = [
 	{
 		label: 'Qiita',
 		url: 'https://qiita.com/nju33'
+	},
+	{
+		label: 'coconala',
+		url: 'https://coconala.com/users/72768'
+	},
+	{
+		label: 'Twitter',
+		url: 'https://twitter.com/nju33_ki'
 	},
 	{
 		label: 'Quit',
