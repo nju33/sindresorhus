@@ -1,4 +1,5 @@
 'use strict';
+const chalk = require('chalk');
 const {h, Text} = require('ink');
 const SelectInput = require('ink-select-input');
 const opn = require('opn');
@@ -17,28 +18,52 @@ const handleSelect = item => {
 
 const items = [
 	{
-		label: 'Website',
+		label: chalk.bgYellow.black(' Website '),
 		url: 'https://nju33.com'
 	},
 	{
-		label: 'Findy',
-		url: 'https://findy-code.io/share_profiles/mj1FnGAPvkbpJ'
+		label: chalk.white('Style Guide'),
+		url: 'https://github.com/nju33/styleguide'
 	},
 	{
-		label: 'GitHub',
+		label: chalk.white(' | TypeScript / JavaScript'),
+		url: 'https://github.com/nju33/styleguide/blob/master/js.md'
+	},
+	{
+		label: chalk.white(' | Styled Components / Sass(Scss) / CSS'),
+		url: 'https://github.com/nju33/styleguide/blob/master/css.md'
+	},
+	{
+		label: chalk.white('GitHub'),
 		url: 'https://github.com/nju33'
 	},
 	{
-		label: 'Qiita',
+		label: chalk.green('Qiita'),
 		url: 'https://qiita.com/nju33'
 	},
 	{
-		label: 'coconala',
+		label: chalk.red('npm'),
+		url: 'https://www.npmjs.com/~nju33'
+	},
+	{
+		label: chalk.blue('Findy'),
+		url: 'https://findy-code.io/share_profiles/mj1FnGAPvkbpJ'
+	},
+	{
+		label: chalk.cyan('Twitter'),
+		url: 'https://twitter.com/nju33_ki'
+	},
+	{
+		label: chalk.magenta('coconala'),
 		url: 'https://coconala.com/users/72768'
 	},
 	{
-		label: 'Twitter',
-		url: 'https://twitter.com/nju33_ki'
+		label: chalk.blue('Paypal.me'),
+		url: 'https://www.paypal.me/nju33'
+	},
+	{
+		label: chalk.yellow('Ko-fi'),
+		url: 'https://ko-fi.com/nju33_ki'
 	},
 	{
 		label: 'Quit',
@@ -52,7 +77,12 @@ module.exports = () => (
 	<div>
 		<br/>
 		<div>
-			<Text>JavaScriptで生きていきたい</Text>
+			<div>
+				<Text>純(nju33) 26♂</Text>
+			</div>
+			<div>
+				<Text>JavaScriptで生きていきたい</Text>
+			</div>
 		</div>
 		<br/>
 		<SelectInput items={items} onSelect={handleSelect}/>
